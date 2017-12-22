@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SMImonitor</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+
+  <link href="bower_components/air-datepicker/dist/css/datepicker.min.css" rel="stylesheet" type="text/css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+        page. However, you can choose any other skin. Make sure you
+        apply the skin class to the body tag so the changes take effect. -->
+  <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+  <link rel="stylesheet" href="dist/css/skins/skin-dark.min.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition skin-dark sidebar-mini">
+<div class="wrapper">
+
+  <!-- Main Header -->
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a href="smimonitor.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>SMI</b>m</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>SMI</b>monitor</span>
+    </a>
+
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top" role="navigation">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Left Menu -->
+
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <li class="dropdown user user-menu">
+            <a href="#" data-toggle="control-sidebar"><i class="fa fa-comments-o" aria-hidden="true"></i> <span class="hidden-xs">Техподдержка</span></a>
+          </li>
+          <li class="dropdown tasks-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+              <i class="fa fa-money" aria-hidden="true"></i>
+              <span class="hidden-xs">Расход ресурса</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">Тарифный план 1</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li><!-- Task item -->
+                    <a href="#">
+                      <h3>
+                        Переход к полнотеству
+                        <small class="pull-right">400/2000</small>
+                      </h3>
+                      <div class="progress xs">
+                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">20% Complete</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- end task item -->
+                  <li><!-- Task item -->
+                    <a href="#">
+                      <h3>
+                        Активные проекты
+                        <small class="pull-right">4 из 10</small>
+                      </h3>
+                      <div class="progress xs">
+                        <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">40% Complete</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- end task item -->
+
+                </ul>
+              </li>
+              <li class="footer">
+                <a href="#">Сменить тариф</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> <span class="hidden-xs">Помощь</span></a></li>
+
+          <!-- User Account Menu -->
+          <li class="dropdown user user-menu">
+            <!-- Menu Toggle Button -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <!-- The user image in the navbar-->
+              <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+              <span class="hidden-xs">Пользователь</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- The user image in the menu -->
+              <li class="user-header">
+                <img src="dist/img/user7-128x128.jpg" class="img-circle" alt="User Image">
+                <p>
+                  Екатерина Волкова
+                </p>
+                <small>e.volkova@gmail.com</small>
+              </li>
+              <!-- Menu Body -->
+              <li class="user-body">
+                <div class="row">
+                  <div class="col-xs-6 text-center">
+                    <a href="#">Настройки</a>
+                  </div>
+                  <div class="col-xs-6 text-center">
+                    <a href="#">Оплата</a>
+                  </div>
+                </div>
+                <!-- /.row -->
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Профиль</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Выйти</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">Menu</li>
+        <!-- Optionally, you can add icons to the links -->
+        <li><a href="#"><i class="fa fa-newspaper-o"></i> <span>Справочник СМИ</span></a></li>
+        <li class="active"><a href="#"><i class="fa fa-search"></i> <span>Новый запрос</span></a></li>
+        <li class="treeview">
+          <a href="#"><i class="fa fa-folder-open-o"></i> <span>Каталог запросов</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-tags" aria-hidden="true"></i> Все запросы</a></li>
+            <li class="treeview menu">
+                  <a href="#"><i class="fa fa-folder-open-o"></i> Группа запросов
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                  </a>
+                  <ul class="treeview-menu" style="display: none;">
+                    <li><a href="#"><i class="fa fa-circle-o"></i> Запрос 1</a></li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i> Запрос 2</a></li>
+                  </ul>
+                </li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>Запрос МЧС</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#"><i class="fa fa-inbox" aria-hidden="true"></i> <span>Проекты</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-tags" aria-hidden="true"></i> Все проекты</a></li>
+            <li class="treeview menu">
+                  <a href="#"><i class="fa fa-folder-open-o"></i> Группа проектов
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                  </a>
+                  <ul class="treeview-menu" style="display: none;">
+                    <li><a href="#"><i class="fa fa-circle-o"></i> Проект 1</a></li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i> Проект 2</a></li>
+                  </ul>
+                </li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>Проект МЧС</a></li>
+            <li class="treeview menu">
+              <a href="#"><i class="fa fa-archive" aria-hidden="true"></i> Архив проектов
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu" style="display: none;">
+                <li><a href="#"><i class="fa fa-circle-o"></i> Проект Old 1</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> Проект Old 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+
+      </ul>
+      <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Сформировать запрос
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Главная</a></li>
+        <li class="active">Запрос</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content container-fluid">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">Введите данные формы</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form class="form-horizontal">
+              <div class="box-body">
+                <div class="form-group">
+                  <label for="inputText3" class="col-sm-2 control-label">Контекст</label>
+
+                  <div class="col-sm-10">
+                    <textarea class="form-control" id="inputText3" rows="3"></textarea>
+                    <p>Операторы контекстного поиска <small>(кликните для использования)</small>
+                      <small class="pull-right"><u>Как искать?</u></small>
+                    </p>
+
+                    <button class="btn btn-default btn-xs">И</button>
+                    <button class="btn btn-default btn-xs">ИЛИ</button>
+                    <button class="btn btn-default btn-xs">НЕ</button>
+                    <button class="btn btn-default btn-xs">ДО</button>
+                    <button class="btn btn-default btn-xs">ПОСЛЕ</button>
+                    <button class="btn btn-default btn-xs">/(n)</button>
+                    <button class="btn btn-default btn-xs">GE</button>
+                    <button class="btn btn-default btn-xs">LT</button>
+                    <button class="btn btn-default btn-xs">" "</button>
+                    <button class="btn btn-default btn-xs">( )</button>
+                    <button class="btn btn-default btn-xs"> ! </button>
+
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Только в заголовках
+                      </label>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="datepicker1" class="col-sm-2 control-label">Период</label>
+                  <div class="col-sm-10">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control datepicker-here" id="datepicker1" data-timepicker="true" placeholder="от ДД.ММ.ГГГГ">
+                      </div>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control datepicker-here" id="datepicker2" data-timepicker="true" placeholder="до ДД.ММ.ГГГГ">
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="btn-group colors col-sm-8 col-sm-offset-2" data-toggle="buttons">
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" value="red" autocomplete="off" checked> Сегодня
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" value="orange" autocomplete="off"> Сутки
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" value="yellow" autocomplete="off"> Неделя
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" value="yellow" autocomplete="off"> Месяц
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" value="yellow" autocomplete="off"> Год
+                      </label>
+                      <label class="btn btn-default active">
+                        <input type="radio" name="options" value="yellow" autocomplete="off"> Период
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="" class="col-sm-2 control-label">СМИ</label>
+                    <div class="col-sm-10">
+                      <div class="row">
+                        <div class="col-xs-3">
+
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> <strong>Все уровни</strong>
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Федеральный
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Региональный
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Зарубежный
+                            </label>
+                          </div>
+
+                        </div>
+
+                        <div class="col-xs-3">
+
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> <strong>Все категории</strong>
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> ТВ
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Радио
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Газеты
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Журналы
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Информагентства
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Интернет
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Блоги
+                            </label>
+                          </div>
+
+                        </div>
+
+                        <div class="col-xs-3">
+
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> <strong>Все отрасли</strong>
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Бизнес и общество
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> ИТ
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Телеком
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Финансы
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Недвижимость
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> ТЭК
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Остальные
+                            </label>
+                          </div>
+
+                        </div>
+
+                        <div class="col-sm-3">
+                          <div>
+                            <label>Выбрать</label>
+                          </div>
+
+                        <p>Название СМИ</p>
+                        <p>Язык</p>
+                        <p>Автор</p>
+                        <p>Жанр</p>
+                        <p>Рубрика</p>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="" class="col-sm-2 control-label">Название отчета</label>
+                    <div class="col-sm-10">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control">
+                          <span>Поместить в папку</span>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox">Сохранить как новый
+                            </label>
+                          </div>
+                        </div>
+
+
+                      </div>
+
+                    </div>
+                  </div>
+
+
+                </div>
+
+              <!-- /.box-body -->
+              <div class="box-footer">
+                <button type="submit" class="btn btn-default">Отменить</button>
+                <button type="submit" class="btn btn-success pull-right">Сохранить</button>
+              </div>
+              <!-- /.box-footer -->
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="pull-right hidden-xs">
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2017 <a href="#">SMImonitor</a>.</strong> All rights reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Create the tabs -->
+    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+      <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab">Ваш ассистент</a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <!-- Home tab content -->
+      <div class="tab-pane active" id="control-sidebar-home-tab">
+        <ul class="control-sidebar-menu">
+          <li>
+            <div class="row">
+              <div class="col-xs-12 text-center">
+                <img src="dist/img/user2-160x160.jpg"width="50%" class="img-circle" alt="User Image">
+                <h4>Тарасенко Александр</h4>
+                <p>tel: 8(495)755-74-35</p>
+              </div>
+              <div class="col-xs-12 text-center">
+                <p>email: alex@mlg.ru</p>
+                <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-skype fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+              </div>
+            </div>
+            <!-- /.row -->
+          </li>
+
+        </ul>
+        <!-- /.control-sidebar-menu -->
+        <!-- /.control-sidebar-menu -->
+
+      </div>
+      <!-- /.tab-pane -->
+      <!-- Stats tab content -->
+      <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+      <!-- /.tab-pane -->
+      <!-- Settings tab content -->
+      <div class="tab-pane" id="control-sidebar-settings-tab">
+        <form method="post">
+          <h3 class="control-sidebar-heading">General Settings</h3>
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Report panel usage
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+
+            <p>
+              Some information about this general settings option
+            </p>
+          </div>
+          <!-- /.form-group -->
+        </form>
+      </div>
+      <!-- /.tab-pane -->
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+  <!-- Add the sidebar's background. This div must be placed
+  immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED JS SCRIPTS -->
+
+<!-- jQuery 3 -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+
+<!-- bootstrap datepicker -->
+<script src="bower_components/air-datepicker/dist/js/datepicker.min.js"></script>
+
+<script>
+  $(function () {
+  })
+</script>
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. -->
+</body>
+</html>
